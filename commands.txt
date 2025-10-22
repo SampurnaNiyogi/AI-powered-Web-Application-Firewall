@@ -1,0 +1,9 @@
+// To create docker container with nginx config file
+docker run -d --name my-waf-server -p 80:80 -v "$(pwd)\nginx.conf:/etc/nginx/nginx.conf" nginx
+
+
+// To check the logs
+docker exec my-waf-server cat /var/log/nginx/waf_stream.log
+
+// To activate the virtual environment
+.\venv\Scripts\Activate.ps1
