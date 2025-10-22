@@ -1,2 +1,6 @@
 commands.txt
-/venv/
+venv/
+__pycache__/
+waf_model/
+training_data.txt
+*.pyc
